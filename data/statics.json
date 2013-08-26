@@ -1,0 +1,230 @@
+var STATIONS = {
+	"010" : {
+		meta : {
+			id : 10,
+			name : "Wedding",
+			type : "city",
+			address : {
+				street : "Amrumer Str./Limburger Str.",
+				zip : "13353",
+				city : "Berlin",
+				district : "Mitte"
+			}
+		}
+	},
+	"018" : {
+		meta : {
+			id : 18,
+			name : "Schöneberg",
+			type : "city",
+			address : {
+				street : "Belziger Straße 52",
+				zip : "10823",
+				city : "Berlin",
+				district : "Tempelhof-Schöneberg"
+			}
+		}
+	},
+	"027" : {
+		meta : {
+			id : 27,
+			name : "Marienfelde",
+			type : "suburb",
+			address : {
+				street : "Schichauweg 60",
+				zip : "12307",
+				city : "Berlin",
+				district : "Tempelhof-Schöneberg"
+			}
+		}
+	},
+	"032" : {
+		meta : {
+			id : 32,
+			name : "Grunewald",
+			type : "suburb",
+			address : {
+				street : "Forst Grunewald, Jagen 91",
+				zip : "14193",
+				city : "Berlin",
+				district : "Charlottenburg-Wilmersdorf"
+			}
+		}
+	},
+	"042" : {
+		meta : {
+			id : 42,
+			name : "Neukölln",
+			type : "city",
+			address : {
+				street : "Nansenstraße 10",
+				zip : "12047",
+				city : "Berlin",
+				district : "Neukölln"
+			}
+		}
+	},
+	"077" : {
+		meta : {
+			id : 77,
+			name : "Buch",
+			type : "suburb",
+			address : {
+				street : "Wiltbergstr. 50",
+				zip : "13125",
+				city : "Berlin",
+				district : "Pankow"
+			}
+		},
+	},
+	"085" : {
+		meta : {
+			id : 85,
+			name : "Friedrichshagen",
+			type : "suburb",
+			address : {
+				street : "Müggelseedamm 307-310",
+				zip : "12587",
+				city : "Berlin",
+				district : "Treptow-Köpenick"
+			}
+		}
+	},
+	"145" : {
+		meta : {
+			id : 145,
+			name : "Frohnau",
+			type : "suburb",
+			address : {
+				street : "Jägerstieg 1",
+				zip : "13465",
+				city : "Berlin",
+				district : "Reinickendorf"
+			}
+		}
+	},
+	"171" : {
+		meta : {
+			id : 171,
+			name : "Mitte",
+			type : "city",
+			address : {
+				street : "Brückenstraße 6",
+				zip : "10179",
+				city : "Berlin",
+				district : "Mitte"
+			}
+		}
+	},
+	"282" : {
+		meta : {
+			id : 282,
+			name : "Karlshorst",
+			type : "city",
+			address : {
+				street : "Johanna-und-Willy-Brauer-Platz",
+				zip : "10318",
+				city : "Berlin",
+				district : "Lichtenberg"
+			}
+		}
+	},
+	"115" : {
+		meta : {
+			id : 115,
+			name : "Charlottenburg - Hardenbergplatz",
+			type : "traffic-focus",
+			address : {
+				street : "Hardenbergplatz",
+				zip : "10623",
+				city : "Berlin",
+				district : "Charlottenburg-Wilmersdorf"
+			}
+		}
+	},
+	"117" : {
+		meta : {
+			id : 117,
+			name : "Steglitz - Schildhornstraße",
+			type : "traffic-focus",
+			address : {
+				street : "Schildhornstr. 76",
+				zip : "12163",
+				city : "Berlin",
+				district : "Steglitz-Zehlendorf"
+			}
+		}
+	},
+	"124" : {
+		meta : {
+			id : 124,
+			name : "Schöneberg - Mariendorfer Damm",
+			type : "traffic-focus",
+			address : {
+				street : "Mariendorfer Damm 148",
+				zip : "12099",
+				city : "Berlin",
+				district : "Tempelhof-Schöneberg"
+			}
+		}
+	},
+	"143" : {
+		meta : {
+			id : 143,
+			name : "Neukölln - Silbersteinstraße",
+			type : "traffic-focus",
+			address : {
+				street : "Silbersteinstr. 1",
+				zip : "12051",
+				city : "Berlin",
+				district : "Neukölln"
+			}
+		}
+	},
+	"174" : {
+		meta : {
+			id : 174,
+			name : "Friedrichshain - Frankfurter Allee",
+			type : "traffic-focus",
+			address : {
+				street : "Frankfurter Allee 86b",
+				zip : "10247",
+				city : "Berlin",
+				district : "Friedrichshain-Kreuzberg"
+			}
+		}
+	},
+	"220" : {
+		meta : {
+			id : 220,
+			name : "Neukölln - Karl-Marx-Straße",
+			type : "traffic-focus",
+			address : {
+				street : "Karl-Marx-Str. 77",
+				zip : "12043",
+				city : "Berlin",
+				district : "Neukölln"
+			}
+		}
+	}
+};
+
+var COLORS = {
+	particle : 0x6699FF,
+	smoke : 0xCC66FF,
+	nitrogendioxide : 0xFF6699,
+	benzene : 0xFFCC66,
+	carbonmonoxide : 0x99FF66,
+	ozone : 0x66FFCC,
+	sulfurdioxide : 0x66CCFF
+};
+
+var TRANSLATION = {
+	particle : "Partikel PM10",
+	smoke : "Ruß",
+	nitrogendioxide : "Stickstoffdioxid",
+	benzene : "Benzol",
+	carbonmonoxide : "Kohlenmonoxid",
+	ozone : "Ozon",
+	sulfurdioxide : "Schwefeldioxid"
+}

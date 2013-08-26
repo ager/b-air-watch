@@ -1,0 +1,48 @@
+#wrapper { margin-top: 80px }
+#station-tiles .row { margin-bottom: 20px }
+#station-tiles .row > div { background: #111111; }
+#station-tiles canvas { margin: 1px 0 0 1px; background: #2f2f2f; }
+
+#station-tiles .span2 { position:relative; height: 140px; }
+#station-tiles .span2:hover .title { display: block; }
+#station-tiles .title { display: none; position: absolute; bottom: 0; padding: 5px; background: rgba(0, 0, 0, 0.5); }
+
+.suburb { color: #99FF66; }
+.city { color: #FFCC66; }
+.traffic-focus { color: #FF6699; }
+
+.particle { color: #6699FF; }
+.smoke { color: #CC66FF; }
+.nitrogendioxide { color: #FF6699; }
+.benzene { color: #FFCC66; }
+.carbonmonoxide { color: #99FF66; }
+.ozone { color: #66FFCC; }
+.sulfurdioxide { color: #66CCFF; }
+
+.icon-location-arrow span { margin-left: 5px; color: #FFFFFF; }
+
+[class^="awb-icon-"], [class*="awb-icon-"] {
+	font-family: FontAwesome; font-weight: normal; font-style: normal
+}
+.awb-icon-particle {
+	padding-left: 10px;
+	background-image: url('../images/particle.png'); background-repeat: no-repeat; background-size: 10px 10px; background-position: 0 center;
+}
+
+.awb-icon-particle span { margin-left: 5px; }
+
+/*http://www.colorschemer.com/schemes/viewscheme.php?id=9392*/
+
+
+
+/* TREEMAP */
+[id^="treemap-"] {
+	position: absolute; width: 180px; height: 180px; z-index: -1; top: 0;
+}
+
+.modeTreeMap [id^="treemap-"] { z-index: 1; }
+
+.node {
+	line-height: 16px; overflow: hidden; position: absolute; text-indent: 4px;
+	border: solid 1px #2f2f2f; color: #2f2f2f;
+}

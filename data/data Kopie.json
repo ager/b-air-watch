@@ -1,0 +1,784 @@
+var stations = {
+	010 : {
+		meta : {
+			id : 010,
+			name : "Wedding",
+			type : "city",
+			address : {
+				street : "Amrumer Str./Limburger Str.",
+				zip : "13353",
+				city : "Berlin",
+				district : "Mitte"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	018 : {
+		meta : {
+			id : 018,
+			name : "Schöneberg",
+			type : "city",
+			address : {
+				street : "Belziger Straße 52",
+				zip : "10823",
+				city : "Berlin",
+				district : "Tempelhof-Schöneberg"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	027 : {
+		meta : {
+			id : 027,
+			name : "Marienfelde",
+			type : "suburb",
+			address : {
+				street : "Schichauweg 60",
+				zip : "12307",
+				city : "Berlin",
+				district : "Tempelhof-Schöneberg"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	032 : {
+		meta : {
+			id : 032,
+			name : "Grunewald",
+			type : "suburb",
+			address : {
+				street : "Forst Grunewald, Jagen 91",
+				zip : "14193",
+				city : "Berlin",
+				district : "Charlottenburg-Wilmersdorf"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	042 : {
+		meta : {
+			id : 042,
+			name : "Neukölln",
+			type : "city",
+			address : {
+				street : "Nansenstraße 10",
+				zip : "12047",
+				city : "Berlin",
+				district : "Neukölln"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	077 : {
+		meta : {
+			id : 077,
+			name : "Buch",
+			type : "suburb",
+			address : {
+				street : "Wiltbergstr. 50",
+				zip : "13125",
+				city : "Berlin",
+				district : "Pankow"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	085 : {
+		meta : {
+			id : 085,
+			name : "Friedrichshagen",
+			type : "suburb",
+			address : {
+				street : "Müggelseedamm 307-310",
+				zip : "12587",
+				city : "Berlin",
+				district : "Treptow-Köpenick"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	145 : {
+		meta : {
+			id : 145,
+			name : "Frohnau",
+			type : "suburb",
+			address : {
+				street : "Jägerstieg 1",
+				zip : "13465",
+				city : "Berlin",
+				district : "Reinickendorf"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	171 : {
+		meta : {
+			id : 171,
+			name : "Mitte",
+			type : "city",
+			address : {
+				street : "Brückenstraße 6",
+				zip : "10179",
+				city : "Berlin",
+				district : "Mitte"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	282 : {
+		meta : {
+			id : 282,
+			name : "Karlshorst",
+			type : "city",
+			address : {
+				street : "Johanna-und-Willy-Brauer-Platz",
+				zip : "10318",
+				city : "Berlin",
+				district : "Lichtenberg"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	115 : {
+		meta : {
+			id : 115,
+			name : "Charlottenburg - Hardenbergplatz",
+			type : "traffic-focus",
+			address : {
+				street : "Hardenbergplatz",
+				zip : "10623",
+				city : "Berlin",
+				district : "Charlottenburg-Wilmersdorf"
+			}
+		},
+		data : {
+				children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	117 : {
+		meta : {
+			id : 117,
+			name : "Steglitz - Schildhornstraße",
+			type : "traffic-focus",
+			address : {
+				street : "Schildhornstr. 76",
+				zip : "12163",
+				city : "Berlin",
+				district : "Steglitz-Zehlendorf"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	124 : {
+		meta : {
+			id : 124,
+			name : "Schöneberg - Mariendorfer Damm",
+			type : "traffic-focus",
+			address : {
+				street : "Mariendorfer Damm 148",
+				zip : "12099",
+				city : "Berlin",
+				district : "Tempelhof-Schöneberg"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	143 : {
+		meta : {
+			id : 143,
+			name : "Neukölln - Silbersteinstraße",
+			type : "traffic-focus",
+			address : {
+				street : "Silbersteinstr. 1",
+				zip : "12051",
+				city : "Berlin",
+				district : "Neukölln"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	174 : {
+		meta : {
+			id : 174,
+			name : "Friedrichshain - Frankfurter Allee",
+			type : "traffic-focus",
+			address : {
+				street : "Frankfurter Allee 86b",
+				zip : "10247",
+				city : "Berlin",
+				district : "Friedrichshain-Kreuzberg"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	},
+	220 : {
+		meta : {
+			id : 220,
+			name : "Neukölln - Karl-Marx-Straße",
+			type : "traffic-focus",
+			address : {
+				street : "Karl-Marx-Str. 77",
+				zip : "12043",
+				city : "Berlin",
+				district : "Neukölln"
+			}
+		},
+		data : {
+			children : [
+				{
+					name : "pm10",
+					daily_mean : 26,
+					exceedance : 13
+				},
+				{
+					name : "grime",
+					daily_mean : 1.1,
+					max_3_hours : 1.6
+				},
+				{
+					name : "nitrogen_dioxide",
+					daily_mean : 15,
+					max_1_hour : 31
+				},
+				{
+					name : "benzol",
+					daily_mean : 0.8,
+					max_1_hour : 1.6
+				},
+				{
+					name : "carbon_monoxide",
+				},
+				{
+					name : "active_oxygen",
+					max_1_hour : 102,
+					max_floating_8_hours : 99
+				},
+				{
+					name : "sulfur",
+				}
+			]
+		}
+	}
+};
+
+var weather = {
+	// @TODO
+};
+
+var COLORS = {
+	pm10 : 0x6699FF,
+	grime : 0xCC66FF,
+	nitrogen_dioxide : 0xFF6699,
+	benzol : 0xFFCC66,
+	carbon_monoxide : 0x99FF66,
+	active_oxygen : 0x66FFCC,
+	sulfur : 0x66CCFF
+};
